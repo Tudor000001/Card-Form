@@ -5,11 +5,22 @@
 <body style="background-image: url('images/bg-main-desktop.png');">
     <div class="square">
         <div style="position:relative; right:450px; top:150px;">
-            <img class="shadowlet" style="position:relative;" src="images/bg-card-front.png" />
-            <img class="shadowlet" style="position: relative; top: 30px; left: 100px;" src="images/bg-card-back.png" />
+            <div>
+                <img class="shadowlet" style="position:relative;" src="images/bg-card-front.png" />
+                <p class="texteCard" style="font-size:30px; bottom:270px; left:30px; letter-spacing:5px;">0000 0000 0000 0000</p>
+                <p class="texteCard" style="bottom:250px; left:30px;">Jane Appleseed</p>
+                <p class="texteCard" style="bottom:250px; left:350px;">00/00</p>
+            </div>
+            <div>
+                <img class="shadowlet" style="position: relative; top: 30px; left: 100px;" src="images/bg-card-back.png" />
+                <p class="texteCard" style="bottom:68px; left:470px;">000</p>
+            </div>
         </div>
-        <form>
-
+        <form class="formu">
+            <p class="textInpute">Cardholder name</p>
+            <input type="text" placeholder="e.g. Jane Appleseed" class="inpute" />
+            <p class="textInpute">Card number</p>
+            <input type="tel" placeholder="e.g. 1234 5678 9123 0000" class="inpute" maxlength="16" />
         </form>
     </div>
 </body>
