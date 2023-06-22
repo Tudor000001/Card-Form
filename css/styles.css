@@ -23,7 +23,7 @@
 .formu{
     position:absolute;
     left:200px;
-    bottom:500px;
+    bottom:350px;
 }
 
 .inpute{
@@ -36,6 +36,7 @@
 }
 
 .textInpute{
+    position:relative;
     font-family:Roboto;
     font-size:13px;
     color:midnightblue;
@@ -52,4 +53,24 @@ input::-webkit-inner-spin-button {
     position:absolute;
     color:white;
     font-family:Roboto;
+}
+
+.mmyy {
+    height: 40px;
+    width: 50px;
+    border-radius: 5px;
+    text-indent: 10px;
+    border: 1px solid darkgray;
+    font-family: Roboto;
+}
+
+.buthon{
+    position:relative;
+    width:300px;
+    height:40px;
+    border-radius:5px;
+    top:30px;
+    background-color:midnightblue;
+    color:white;
+    border:0px solid red;
 }

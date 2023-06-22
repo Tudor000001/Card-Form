@@ -7,8 +7,10 @@
         <div style="position:relative; right:450px; top:150px;">
             <div>
                 <img class="shadowlet" style="position:relative;" src="images/bg-card-front.png" />
+                <div style="height:40px;width:40px;border-radius:50%;background-color:white;position:absolute;bottom:430px; left:20px;"></div>
+                <div style="height:20px;width:20px;border-radius:50%;border:1px solid white; background-color:transparent;position:absolute;bottom:440px; left:70px;"></div>
                 <p class="texteCard" style="font-size:30px; bottom:270px; left:30px; letter-spacing:5px;">0000 0000 0000 0000</p>
-                <p class="texteCard" style="bottom:250px; left:30px;">Jane Appleseed</p>
+                <p class="texteCard" style="bottom:250px; left:30px;" id="noome">Jane Appleseed</p>
                 <p class="texteCard" style="bottom:250px; left:350px;">00/00</p>
             </div>
             <div>
@@ -18,10 +20,17 @@
         </div>
         <form class="formu">
             <p class="textInpute">Cardholder name</p>
-            <input type="text" placeholder="e.g. Jane Appleseed" class="inpute" />
+            <input type="text" placeholder="e.g. Jane Appleseed" class="inpute" required id="nome"/>
             <p class="textInpute">Card number</p>
-            <input type="tel" placeholder="e.g. 1234 5678 9123 0000" class="inpute" maxlength="16" />
+            <input type="tel" placeholder="e.g. 1234 5678 9123 0000" class="inpute" minlength="16" maxlength="16" required/>
+            <p class="textInpute">Exp.Date(MM/YY)</p>
+            <input type="tel" maxlength="2" minlength="2" placeholder="MM" class="mmyy" required/>&nbsp;&nbsp;<input type="tel" maxlength="2" minlength="2" placeholder="YY" class="mmyy" style="display:inline;" required/>
+            <p class="textInpute" style="display:inline;bottom:41px;left:20px;">CVC</p>
+            <input type="tel" maxlength="3" minlength="3" class="inpute" style="height:40px;width:160px;" placeholder="e.g. 123" required/>
+            <br />
+            <button class="buthon">Confirm</button>
         </form>
     </div>
+    <script src="javascript/script.js"></script>
 </body>
 </html>
