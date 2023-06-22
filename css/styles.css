@@ -1,0 +1,21 @@
+.imagineBg{
+    display:flex;
+    justify-content:left;
+    align-items:center;
+    overflow:hidden;
+}
+
+.square{
+    position:absolute;
+    height:890px;
+    width:600px;
+    align-content:flex-end;
+    background-color:white;
+    outline:100px solid white;
+    left:550px;
+}
+
+.shadowlet {
+    box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02), 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028), 12.5px 12.5px 10px rgba(0, 0, 0, 0.035), 22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042), 41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05), 100px 100px 80px rgba(0, 0, 0, 0.07);
+    border-radius:0px 0px 10px 0px;
+}
