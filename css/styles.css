@@ -35,6 +35,14 @@
     font-family:Roboto;
 }
 
+.inpute:hover{
+    border:1px solid mediumpurple;
+}
+
+.inpute:invalid{
+    border:1px solid red;
+}
+
 .textInpute{
     position:relative;
     font-family:Roboto;
@@ -62,6 +70,10 @@ input::-webkit-inner-spin-button {
     text-indent: 10px;
     border: 1px solid darkgray;
     font-family: Roboto;
+}
+
+.mmyy:hover{
+    border:1px solid mediumpurple;
 }
 
 .buthon{
