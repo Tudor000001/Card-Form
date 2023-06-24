@@ -39,10 +39,6 @@
     border:1px solid mediumpurple;
 }
 
-.inpute:invalid{
-    border:1px solid red;
-}
-
 .textInpute{
     position:relative;
     font-family:Roboto;

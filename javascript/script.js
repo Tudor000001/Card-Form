@@ -9,6 +9,7 @@ var yyCard = document.getElementById('yyCard');
 var cvcInput = document.getElementById('cvcInput');
 var cvcCard = document.getElementById('cvcCard');
 var formular = document.getElementById('formular');
+var succes = document.getElementById('da');
 
 
 numeInput.addEventListener('keyup', function () {
@@ -55,4 +56,9 @@ container.addEventListener('keydown', function (event) {
 formular.addEventListener('submit', function (event) {
     event.preventDefault();
     formular.style.display = 'none';
+    succes.style.display = 'block';
+});
+
+numeInput.addEventListener('submit', function (event) {
+    event.preventDefault;
 });

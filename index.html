@@ -20,17 +20,25 @@
         </div>
         <form class="formu" id="formular">
             <p class="textInpute">Cardholder name</p>
-            <input type="text" placeholder="e.g. Jane Appleseed" class="inpute" required id="nome"/>
+            <input type="text" placeholder="e.g. Jane Appleseed" class="inpute" required id="nome" pattern=".*\S+.*"/>
             <p class="textInpute">Card number</p>
-            <input type="tel" placeholder="e.g. 1234 5678 9123 0000" class="inpute" id="cardNrInput" minlength="16" maxlength="16" required/>
+            <input type="tel" placeholder="e.g. 1234 5678 9123 0000" class="inpute" id="cardNrInput" pattern=".*\S+.*" minlength="16" maxlength="16" required/>
             <p class="textInpute">Exp.Date(MM/YY)</p>
-            <input type="tel" maxlength="2" minlength="2" placeholder="MM" class="mmyy" id="mm" max="12" required/>&nbsp;&nbsp;<input type="tel" id="yy" maxlength="2" minlength="2" placeholder="YY" class="mmyy" style="display:inline;" required/>
+            <input type="number" maxlength="2" minlength="2" placeholder="MM" class="mmyy" id="mm" min="1" max="12" pattern=".*\S+.*" required/>&nbsp;&nbsp;<input type="number" pattern=".*\S+.*" id="yy" maxlength="2" minlength="2" placeholder="YY" class="mmyy" style="display:inline;" min="1" max="99" required/>
             <p class="textInpute" style="display:inline;bottom:41px;left:20px;">CVC</p>
-            <input type="tel" maxlength="3" minlength="3" class="inpute" style="height:40px;width:160px;" placeholder="e.g. 123" id="cvcInput" required/>
+            <input type="tel" pattern=".*\S+.*" maxlength="3" minlength="3" class="inpute" style="height:40px;width:160px;" placeholder="e.g. 123" id="cvcInput" required/>
             <br />
             <button class="buthon">Confirm</button>
         </form>
+        <div id="da" style="display:none;">
+            <img src="images/icon-complete.svg" style="position:absolute; left:280px; bottom:500px;" />
+            <p style="position:absolute; font-family:Roboto; left:230px; bottom:400px; color:rebeccapurple; font-size:40px;">Thank you!</p>
+            <p style="position:absolute; font-family:Roboto; left:200px; bottom:380px; color:gray; text-align:center; font-size:20px;">We've added your card details</p>
+            <button class="buthon" style="top:24px; left:200px;">Continue</button>
+        </div>
     </div>
     <script src="javascript/script.js"></script>
 </body>
 </html>
+
+<!--EROARE CUSTOM DE FACUT-->
